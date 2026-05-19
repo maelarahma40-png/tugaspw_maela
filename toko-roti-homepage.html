@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Roti - Roti Lezat Berkualitas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-amber-50">
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-amber-100 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold text-amber-900">🍞 Roti Emas</span>
+                    </div>
+                </div>
+
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-amber-900 font-medium hover:text-orange-700 transition duration-300">Home</a>
+                    <a href="#menu" class="text-amber-900 font-medium hover:text-orange-700 transition duration-300">Menu</a>
+                    <a href="#tentang" class="text-amber-900 font-medium hover:text-orange-700 transition duration-300">Tentang Kami</a>
+                </div>
+
+                <!-- Keranjang Belanja & Menu Mobile -->
+                <div class="flex items-center space-x-4">
+                    <button class="relative p-2 text-amber-900 hover:text-orange-700 transition duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m10 0h2m0 0a2 2 0 100-4 2 2 0 000 4zm-8 0a2 2 0 100-4 2 2 0 000 4z"></path>
+                        </svg>
+                        <span class="absolute top-1 right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+                    </button>
+
+                    <!-- Menu Mobile Toggle -->
+                    <button class="md:hidden p-2 text-amber-900 hover:text-orange-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-amber-50 px-4 py-2 border-t border-amber-200">
+            <a href="#home" class="block py-2 text-amber-900 font-medium hover:text-orange-700">Home</a>
+            <a href="#menu" class="block py-2 text-amber-900 font-medium hover:text-orange-700">Menu</a>
+            <a href="#tentang" class="block py-2 text-amber-900 font-medium hover:text-orange-700">Tentang Kami</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-amber-900 to-orange-700 text-white py-20 md:py-32 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                Selamat Datang di Toko Roti Kami
+            </h1>
+            <p class="text-lg md:text-xl mb-8 text-amber-100">
+                Nikmati roti lezat berkualitas tinggi yang dibuat segar setiap hari dengan bahan pilihan terbaik
+            </p>
+            <button class="bg-yellow-400 hover:bg-yellow-300 text-amber-900 font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 text-lg shadow-lg">
+                Lihat Menu Hari Ini
+            </button>
+        </div>
+    </section>
+
+    <!-- Produk Terlaris Section -->
+    <section id="menu" class="py-20 px-4 bg-amber-50">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Title -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-amber-900 mb-4">
+                    Produk Terlaris
+                </h2>
+                <p class="text-lg text-amber-800">
+                    Pilihan roti favorit pelanggan kami
+                </p>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Produk 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105">
+                    <!-- Placeholder Gambar -->
+                    <div class="bg-gradient-to-br from-amber-200 to-orange-300 h-64 flex items-center justify-center">
+                        <svg class="w-32 h-32 text-amber-900 opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3m-6 0V1a1 1 0 10-2 0v2m-6 0V1a1 1 0 10-2 0v2h12V1a1 1 0 10-2 0v2a1 1 0 10-2 0V1a1 1 0 10-2 0v2z"/>
+                        </svg>
+                    </div>
+
+                    <!-- Konten Produk -->
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-2">Roti Gandum Cokelat</h3>
+                        <p class="text-amber-700 text-sm mb-4">
+                            Roti gandum utuh yang kaya serat dan bergizi, cocok untuk sarapan sehat Anda
+                        </p>
+                        
+                        <!-- Rating -->
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                            </div>
+                            <span class="text-amber-700 text-sm ml-2">(45 ulasan)</span>
+                        </div>
+
+                        <!-- Harga -->
+                        <div class="text-3xl font-bold text-orange-600 mb-4">Rp 28.000</div>
+
+                        <!-- Tombol Beli -->
+                        <button class="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-lg transition duration-300 transform hover:scale-105">
+                            🛒 Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produk 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105">
+                    <!-- Placeholder Gambar -->
+                    <div class="bg-gradient-to-br from-yellow-200 to-amber-300 h-64 flex items-center justify-center">
+                        <svg class="w-32 h-32 text-amber-900 opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3m-6 0V1a1 1 0 10-2 0v2m-6 0V1a1 1 0 10-2 0v2h12V1a1 1 0 10-2 0v2a1 1 0 10-2 0V1a1 1 0 10-2 0v2z"/>
+                        </svg>
+                    </div>
+
+                    <!-- Konten Produk -->
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-2">Roti Putih Klasik</h3>
+                        <p class="text-amber-700 text-sm mb-4">
+                            Roti putih lembut dengan tekstur yang sempurna, dijamin fresh dari oven
+                        </p>
+
+                        <!-- Rating -->
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                            </div>
+                            <span class="text-amber-700 text-sm ml-2">(62 ulasan)</span>
+                        </div>
+
+                        <!-- Harga -->
+                        <div class="text-3xl font-bold text-orange-600 mb-4">Rp 24.000</div>
+
+                        <!-- Tombol Beli -->
+                        <button class="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-lg transition duration-300 transform hover:scale-105">
+                            🛒 Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produk 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105">
+                    <!-- Placeholder Gambar -->
+                    <div class="bg-gradient-to-br from-orange-200 to-red-300 h-64 flex items-center justify-center">
+                        <svg class="w-32 h-32 text-amber-900 opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3m-6 0V1a1 1 0 10-2 0v2m-6 0V1a1 1 0 10-2 0v2h12V1a1 1 0 10-2 0v2a1 1 0 10-2 0V1a1 1 0 10-2 0v2z"/>
+                        </svg>
+                    </div>
+
+                    <!-- Konten Produk -->
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-2">Roti Cokelat Premium</h3>
+                        <p class="text-amber-700 text-sm mb-4">
+                            Roti spesial dengan chips cokelat premium, sempurna untuk cemilan istimewa
+                        </p>
+
+                        <!-- Rating -->
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                            </div>
+                            <span class="text-amber-700 text-sm ml-2">(58 ulasan)</span>
+                        </div>
+
+                        <!-- Harga -->
+                        <div class="text-3xl font-bold text-orange-600 mb-4">Rp 32.000</div>
+
+                        <!-- Tombol Beli -->
+                        <button class="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-lg transition duration-300 transform hover:scale-105">
+                            🛒 Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section id="tentang" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Konten -->
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-amber-900 mb-6">
+                        Tentang Kami
+                    </h2>
+                    <p class="text-lg text-amber-800 mb-4 leading-relaxed">
+                        Kami adalah toko roti tradisional yang telah melayani pelanggan setia selama lebih dari 10 tahun. Dengan komitmen terhadap kualitas dan kesegaran, kami setiap hari memproduksi roti lezat menggunakan resep rahasia turun temurun.
+                    </p>
+                    <p class="text-lg text-amber-800 mb-6 leading-relaxed">
+                        Semua bahan yang kami gunakan adalah pilihan terbaik tanpa pengawet buatan, karena kami percaya bahwa roti berkualitas dimulai dari bahan berkualitas tinggi.
+                    </p>
+                    <button class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
+                        Pelajari Lebih Lanjut
+                    </button>
+                </div>
+
+                <!-- Gambar Placeholder -->
+                <div class="bg-gradient-to-br from-amber-100 to-orange-200 rounded-xl h-80 flex items-center justify-center shadow-lg">
+                    <svg class="w-40 h-40 text-amber-900 opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3m-6 0V1a1 1 0 10-2 0v2m-6 0V1a1 1 0 10-2 0v2h12V1a1 1 0 10-2 0v2a1 1 0 10-2 0V1a1 1 0 10-2 0v2z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-amber-50 py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Kolom 1 -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">🍞 Roti Emas</h3>
+                    <p class="text-amber-100">Roti lezat berkualitas untuk keluarga Indonesia</p>
+                </div>
+
+                <!-- Kolom 2 -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Menu</h4>
+                    <ul class="space-y-2 text-amber-100">
+                        <li><a href="#home" class="hover:text-yellow-300 transition">Home</a></li>
+                        <li><a href="#menu" class="hover:text-yellow-300 transition">Produk</a></li>
+                        <li><a href="#tentang" class="hover:text-yellow-300 transition">Tentang Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 3 -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-amber-100">
+                        <li>📞 (021) 1234-5678</li>
+                        <li>📧 info@rotimas.com</li>
+                        <li>📍 Jl. Roti Manis No. 42, Jakarta</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-amber-700 pt-8 text-center text-amber-100">
+                <p>&copy; 2026 Toko Roti Emas. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script untuk Mobile Menu Toggle -->
+    <script>
+        document.querySelectorAll('button.md\\:hidden').forEach(button => {
+            button.addEventListener('click', function() {
+                const menu = document.querySelector('.hidden.md\\:hidden');
+                if (menu) {
+                    menu.classList.toggle('hidden');
+                }
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
